@@ -75,11 +75,49 @@ let str1 = "hello";
 let str2 = " Jitendra";
 
 let str3 = str1 + str2;
-console.log(str3);
+// console.log(str3);
 
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + "2");
-console.log("1" + 2 + 2);
-console.log(1 + "2" + 2);
-console.log(1 + 2 + "2")
+// console.log("1" + 2);
+// console.log(1 + "2");
+// console.log("1" + "2");
+// console.log("1" + 2 + 2);
+// console.log(1 + "2" + 2);
+// console.log(1 + 2 + "2");
+
+// console.log(3+4*5%3) this approach is wrong use Parenthetical phrase
+
+// console.log( (3 + 4) * 5 % 3);
+
+// JavaScript works from L to R so if, first value is string the all of rest also convert into string.
+
+// console.log(+true)
+// console.log(true+)
+
+let num1, num2, num3;
+
+num1 = num2 = num3 = 2 + 2;
+
+// let gameCounter = 100;
+// gameCounter++;
+// console.log(gameCounter);
+
+let gameCounter = 100;
+++gameCounter;
+console.log(gameCounter);
+
+
+// ****Lets understand more deeply Postfix and Prefix******
+
+// Postfix =>   “Pehle bol do value, phir badhao”
+// Prefix =>     Phele badhao , phir value do
+
+let x = 5;
+
+let a = x++;
+let b = ++x;
+
+console.log(a); // ?
+console.log(b); // ?
+
+// toh , yha a => 5
+// b => 7
