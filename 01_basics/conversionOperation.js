@@ -103,21 +103,32 @@ num1 = num2 = num3 = 2 + 2;
 
 let gameCounter = 100;
 ++gameCounter;
-console.log(gameCounter);
-
+// console.log(gameCounter);
 
 // ****Lets understand more deeply Postfix and Prefix******
 
 // Postfix =>   “Pehle bol do value, phir badhao”
 // Prefix =>     Phele badhao , phir value do
 
-let x = 5;
+// let x = 5;
 
-let a = x++;
-let b = ++x;
+// let a = x++;
+// let b = ++x;
 
-console.log(a); // ?
-console.log(b); // ?
+// console.log(a); // ?
+// console.log(b); // ?
+
+// console.log(`a:${a}, b:${b}`);  //** hum isko aise bhi likh sakte hai **/
 
 // toh , yha a => 5
 // b => 7
+
+// one more exaple =>
+
+let x = 3;
+const y = x++;
+
+console.log(x)
+console.log(y)
+
+console.log(`x:${x}, y:${y}`);
