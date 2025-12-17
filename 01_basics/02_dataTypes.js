@@ -94,3 +94,58 @@ console.log(getName(users[1]));
 
 ➤ Output: Ravi
 */
+
+
+// +++++++++++++++++++++++++++++++++++++++++++
+
+/*
+*************Types of memory**********
+1. Stack memory.            2. Heap memory
+
+1.Stack Memory (Copy wali memory)
+Use hoti hai: Primitive data types ke liye
+
+Primitive types:
+Number
+String
+Boolean
+null
+undefined
+Symbol
+BigInt
+
+Simple rule:
+👉 Stack = copy banti hai
+Example: let a = 10;
+let b = a;
+b = 20;
+
+console.log(a); // 10
+console.log(b); // 20
+Samjho jaise:
+a ke paas 10 hai
+b ko 10 ki copy mili
+b change hua, a same raha
+📌 Stack me original safe rehta hai
+
+2. Heap Memory (Reference wali memory)
+Use hoti hai: Non‑Primitive data types ke liye
+Non‑Primitive types:
+Object
+Array
+Function
+Simple rule:
+👉 Heap = address / reference milta hai
+
+Example:let user1 = { name: "Aman" };
+let user2 = user1;
+user2.name = "Ravi";
+
+console.log(user1.name); // Ravi
+console.log(user2.name); // Ravi
+
+Samjho jaise:
+user1 aur user2 same box ko point kar rahe hain
+Box ke andar ka data change hua
+Dono me change dikha
+📌 Heap me copy nahi banti, same memory share hoti hai
